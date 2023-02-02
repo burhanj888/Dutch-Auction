@@ -37,24 +37,17 @@ contract BasicDutchAuction {
         uint256 curPrice = currentPrice();
         require(msg.value >= curPrice, "Insufficient Value");
 
-        finalize();
+        buyer = msg.sender;
 
         uint256 refundAmount = msg.value - curPrice;
-        refund(refundAmount);
+        if(refundAmount > 0){
+            payable(msg.sender).transfer(refundAmount);
+        }
 
         seller.transfer(msg.value - refundAmount);
 
         return buyer;
     }
 
-    function finalize() public {
-        buyer = msg.sender;
-    }
-
-    function refund(uint256 refundAmount) public {
-        if(refundAmount > 0){
-            payable(msg.sender).transfer(refundAmount);
-        }
-    }
 }
 
