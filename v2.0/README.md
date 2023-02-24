@@ -27,9 +27,8 @@ Instrumenting for coverage...
 Compilation:
 ============
 
-Generating typings for: 15 artifacts in dir: typechain-types for target: ethers-v5
-Successfully generated 44 typings!
-Compiled 14 Solidity files successfully
+Nothing to compile
+No need to generate any newer typings.
 
 Network Info
 ============
@@ -40,26 +39,25 @@ Network Info
 
   Tests
     Mint ERC721 Token
-      ✔ Safe Mint - Owner (511ms)
-      ✔ should revert when non-owner tries to safely mint a token (43ms)
+      ✔ safMint successfully by the owner (522ms)
+      ✔ should revert when non-owner tries to safely mint a token (48ms)
       ✔ should revert when maximum token supply is reached (150ms)
-      ✔ Mint Successfully and Deploy Auction's Contract (135ms)
+      ✔ Mint Successfully and Deploy Auction's Contract (144ms)
 
-  Bid - without approval
-    ✔ Bid - By Seller
-    ✔ Bid - Without approval (50ms)
-    ✔ Approving - Invalid TokenID
-    ✔ Approval - Not the owner
-    ✔ Approving
+  Without Approval
+    ✔ should revert when the seller tries to bid without approval (39ms)
+    ✔ should revert when the other account tries to bid without approval (39ms)
+    ✔ should revert when the seller tries to approve with invalid TokenID
+    ✔ should revert when the other account try to approve
+    ✔ After Approval
 
   Bid - With Approval
-    ✔ Bid - Insufficient Funds
-    ✔ Bid - Success
+    ✔ should revert when a bid is placed with Insufficient Funds
+    ✔ Bid placed successfully by other
     ✔ should revert when a bid is placed after auction is closed
-    ✔ Bid - Closed Auction
 
 
-  13 passing (1s)
+  12 passing (1s)
 
 ----------------------|----------|----------|----------|----------|----------------|
 File                  |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
