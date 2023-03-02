@@ -1,0 +1,220 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0x4cd4105039723791b905bb4c7af4f48b44905b07e4c8bfbe34ac8a5a1fc49c82",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "1951bd318921f04a9e2b95f1c95d2726303ad2b39a53bcf9e3f7feb9dba58c94": {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0xc9550a94c1c0313424d27894d67d121227c9b4641e18723f31e984e68a4c1d16",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "bidToken",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_contract(IERC20)1989",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:35"
+          },
+          {
+            "label": "token",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_contract(ERC721Tokens)5369",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:36"
+          },
+          {
+            "label": "nftTokenId",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_uint256",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:37"
+          },
+          {
+            "label": "seller",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_address_payable",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:38"
+          },
+          {
+            "label": "buyer",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_address",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:39"
+          },
+          {
+            "label": "reservePrice",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_uint256",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:41"
+          },
+          {
+            "label": "numBlockAuctionOpen",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_uint256",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:42"
+          },
+          {
+            "label": "offerPriceDecrement",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_uint256",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:43"
+          },
+          {
+            "label": "initialPrice",
+            "offset": 0,
+            "slot": "209",
+            "type": "t_uint256",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:44"
+          },
+          {
+            "label": "initialBlock",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_uint256",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:45"
+          },
+          {
+            "label": "endBlock",
+            "offset": 0,
+            "slot": "211",
+            "type": "t_uint256",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:46"
+          },
+          {
+            "label": "highestBidder",
+            "offset": 0,
+            "slot": "212",
+            "type": "t_address",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:47"
+          },
+          {
+            "label": "auctionEnd",
+            "offset": 20,
+            "slot": "212",
+            "type": "t_bool",
+            "contract": "NFTDutchAuction_ERC20Bids",
+            "src": "contracts\\NFTDutchAuction_ERC20Bids.sol:48"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ERC721Tokens)5369": {
+            "label": "contract ERC721Tokens",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1989": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
