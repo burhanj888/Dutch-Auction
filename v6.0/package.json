@@ -1,0 +1,15 @@
+{
+  "name": "v6.0",
+  "version": "1.0.0",
+  "description": "Dutch Auction with React UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Burhanuddin Jinwala",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.13.0"
+  }
+}
